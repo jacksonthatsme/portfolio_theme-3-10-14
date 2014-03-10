@@ -1,0 +1,79 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+	margin: 0px;
+}
+/* =Reset
+-------------------------------------------------------------- */
+
+/*======= Global Variables =======*/
+
+$main-color: rgb(0,72,207);
+$background-color: #EFF3F8;  /*#fff6ee; /*#fff3fe; #f0fff9;*/
+$grey-color: #3A4451;
+$georgia: georgia;
+$sans-serif: 'Lato', helvetica, sans-serif;
+$alt-grey-color: #EFF2F8;
+$secondary-color: #ED1976;/* #00ADEF; /* #51BB7F; #EE6B5A; */
+
+/*======= mixins =======*/
+@mixin text-hover{
+	border-bottom: 4px solid $secondary-color;
+}
+@mixin btn-style{
+	@include border;
+	padding: 5px 8px;
+	color: inherit;
+	border-radius: 2px;
+	&:hover{
+		background-color: $secondary-color;
+		color: #ffffff;
+	}
+}
+
+@mixin inline-text-link{
+	color: $main-color;
+	border-bottom: $secondary-color 1px solid;
+	
+	&:hover{
+		border-bottom: $secondary-color 4px solid;
+	}
+}
+@mixin border{
+	border: 1px solid $main-color;
+}
+
+body{
+	font-family: $georgia;
+	color: $main-color;
+}
+::selection{
+	background-color: $secondary-color;
+	color: #ffffff;
+}

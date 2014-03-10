@@ -1,0 +1,84 @@
+h1{
+	font-size: 33px;
+	font-weight: 800;
+	font-family: $georgia;
+	color: $main-color;
+}
+
+h2{
+	font-size: 29px;
+	font-family: $georgia;
+	color: $main-color;
+	line-height: 32px;
+}
+
+h3{
+	font-family: $georgia;
+	font-size: 18px;
+	color: $main-color;
+	a{
+		color: $main-color;
+	}
+	a:hover{
+		@include text-hover;
+	}
+}
+
+h4{
+	font-family: $sans-serif;
+	font-size: 12px;
+	color: $main-color;
+	strong{
+		font-weight: 800;
+	}
+}
+p{
+	font-family: $sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 23px;
+	&.caption{
+		font-size: 12px;
+	}
+}
+#resume{
+  h4{
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    font-weight: 400;
+    color: $grey-color;
+    a{
+      @include inline-text-link;
+      color: inherit;
+    }
+  }
+  h2{
+    margin: 0px 0px 10px;
+    &:not(:first-child){
+      margin-top: 32px;
+    }
+  }
+  p{
+    line-height: 21px;
+    margin-top: 10px;
+    color: $grey-color;
+    font-weight: 400;
+  }
+  h3{
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  ul.two-up{
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;
+    li{
+      p{
+        margin-top: 0px;
+      }
+    }
+  }
+}

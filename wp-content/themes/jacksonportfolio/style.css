@@ -1,0 +1,466 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+/*RESET*/
+/* line 9, sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 20, sass/_reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 23, sass/_reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 27, sass/_reset.scss */
+.clear {
+  clear: both;
+  margin: 0px;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* COLORS */
+/* BREAKPOINTS */
+/* BASE */
+/* line 19, sass/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 23, sass/_base.scss */
+*::selection, *:before::selection, *:after::selection {
+  background-color: #ed1976;
+}
+/* line 26, sass/_base.scss */
+*::-moz-selection, *:before::-moz-selection, *:after::-moz-selection {
+  background-color: #ed1976;
+}
+
+/* line 30, sass/_base.scss */
+body {
+  font-family: 'Droid Sans', verdana, arial, sans-serif;
+  font-size: 14px;
+  color: #04223d;
+}
+
+/* line 35, sass/_base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 1, sass/_layout.scss */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* line 6, sass/_layout.scss */
+.line-width {
+  max-width: 500px;
+}
+
+/* line 9, sass/_layout.scss */
+footer {
+  padding: 8em 0 2em;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+/* line 1, sass/_typography.scss */
+h1 {
+  font-family: georgia, serif;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 700;
+  color: #0047ce;
+}
+/* line 7, sass/_typography.scss */
+h1 + p {
+  margin: 1em 0 0;
+}
+
+/* line 11, sass/_typography.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-family: georgia;
+  color: #0047ce;
+}
+
+/* line 17, sass/_typography.scss */
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #0047ce;
+}
+/* line 21, sass/_typography.scss */
+h3 + p {
+  margin: 1em 0 0;
+}
+
+/* line 25, sass/_typography.scss */
+h4 {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+/* line 30, sass/_typography.scss */
+h4 + p {
+  margin: .6em 0 0;
+}
+
+/* line 34, sass/_typography.scss */
+p {
+  line-height: 1.7em;
+}
+
+/* line 37, sass/_typography.scss */
+.caption {
+  padding: 1em 0 3em;
+  font-size: .9em;
+}
+/* line 40, sass/_typography.scss */
+.caption.white {
+  color: white;
+}
+
+/* line 45, sass/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, p a {
+  border-bottom: 1px solid #ed1976;
+}
+/* line 47, sass/_typography.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, p a:hover {
+  border-bottom: 3px solid #ed1976;
+}
+
+/* line 52, sass/_typography.scss */
+strong {
+  font-weight: bolder;
+}
+
+/* line 1, sass/_header.scss */
+header {
+  margin: 5em 0 3em;
+}
+
+/* line 1, sass/_nav.scss */
+nav {
+  margin: .6em 0 0;
+}
+/* line 4, sass/_nav.scss */
+nav ul li {
+  display: inline-block;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 2em 4px 0;
+}
+/* line 11, sass/_nav.scss */
+nav ul li a:hover {
+  border-bottom: 4px solid #ed1976;
+}
+
+/* line 2, sass/_thumbnails.scss */
+ul.thumbnails li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 1em 1em 0;
+  position: relative;
+}
+@media all and (min-width: 1300px) {
+  /* line 2, sass/_thumbnails.scss */
+  ul.thumbnails li {
+    width: 22%;
+  }
+}
+@media all and (max-width: 1300px) {
+  /* line 2, sass/_thumbnails.scss */
+  ul.thumbnails li {
+    width: 22%;
+  }
+}
+@media all and (max-width: 1000px) {
+  /* line 2, sass/_thumbnails.scss */
+  ul.thumbnails li {
+    width: 30%;
+  }
+}
+@media all and (max-width: 800px) {
+  /* line 2, sass/_thumbnails.scss */
+  ul.thumbnails li {
+    width: 48%;
+  }
+}
+@media all and (max-width: 400px) {
+  /* line 2, sass/_thumbnails.scss */
+  ul.thumbnails li {
+    width: 100%;
+  }
+}
+/* line 22, sass/_thumbnails.scss */
+ul.thumbnails li img {
+  width: 100%;
+}
+/* line 26, sass/_thumbnails.scss */
+ul.thumbnails li.new:after {
+  width: 83px;
+  height: 80px;
+  content: "";
+  background-image: url(images/new.svg);
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-top: -35px;
+  right: 0;
+}
+/* line 38, sass/_thumbnails.scss */
+ul.thumbnails li h4 {
+  display: inline;
+}
+/* line 41, sass/_thumbnails.scss */
+ul.thumbnails li h4:not(:last-child):after {
+  content: " & ";
+}
+
+/* line 2, sass/_project.scss */
+main.project .information {
+  margin-bottom: 3em;
+  position: relative;
+}
+/* line 5, sass/_project.scss */
+main.project .information .overview, main.project .information .description, main.project .information .callout {
+  display: inline-block;
+  vertical-align: text-top;
+}
+/* line 9, sass/_project.scss */
+main.project .information .overview {
+  padding: 0 5em 0 0;
+}
+/* line 11, sass/_project.scss */
+main.project .information .overview h4 {
+  display: inline;
+}
+/* line 14, sass/_project.scss */
+main.project .information .overview h4:not(:last-of-type):after {
+  content: " & ";
+}
+@media all and (max-width: 800px) {
+  /* line 21, sass/_project.scss */
+  main.project .information .description {
+    display: block;
+    width: 100%;
+    margin: 2em 0 0;
+  }
+}
+/* line 28, sass/_project.scss */
+main.project img {
+  width: 100%;
+}
+
+/* line 32, sass/_project.scss */
+.img-full {
+  position: relative;
+}
+/* line 34, sass/_project.scss */
+.img-full p.caption {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 39, sass/_project.scss */
+.img-contained {
+  padding: 2em 0;
+}
+
+/* line 1, sass/_browser.scss */
+.img-w-browser {
+  padding: 2em 0;
+}
+/* line 3, sass/_browser.scss */
+.img-w-browser .browser {
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 7px 7px 5px 5px;
+  overflow: hidden;
+  color: #cfd0d1;
+  font-size: .9em;
+}
+/* line 9, sass/_browser.scss */
+.img-w-browser .browser ul.buttons {
+  margin: 0px 0px 10px;
+  padding: 0px;
+}
+/* line 12, sass/_browser.scss */
+.img-w-browser .browser ul.buttons li {
+  list-style-type: none;
+  width: 10px;
+  height: 10px;
+  background-color: #cfd0d1;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0px;
+}
+/* line 22, sass/_browser.scss */
+.img-w-browser .browser .header {
+  background-color: #ecf0f1;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 7px 7px 0 0;
+}
+/* line 28, sass/_browser.scss */
+.img-w-browser .browser .input {
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+/* line 33, sass/_browser.scss */
+.img-w-browser .browser .foot {
+  height: 10px;
+  background-color: #ecf0f1;
+}
+/* line 37, sass/_browser.scss */
+.img-w-browser .browser .link {
+  float: right;
+}
+/* line 40, sass/_browser.scss */
+.img-w-browser .browser img {
+  margin: 0px;
+}
+
+/* line 1, sass/_about.scss */
+div.about {
+  max-width: 900px;
+}
+/* line 3, sass/_about.scss */
+div.about section {
+  width: 50%;
+  float: left;
+}
+/* line 6, sass/_about.scss */
+div.about section:nth-child(odd) {
+  padding-right: 2em;
+}
+/* line 9, sass/_about.scss */
+div.about section:nth-child(even) {
+  padding-left: 2em;
+}
+/* line 13, sass/_about.scss */
+div.about section.img .caption {
+  padding: 1em 0 0;
+}
+/* line 16, sass/_about.scss */
+div.about section.img img {
+  width: 100%;
+}
+/* line 20, sass/_about.scss */
+div.about section.bio {
+  min-height: 400px;
+}
+/* line 24, sass/_about.scss */
+div.about section.friends ul {
+  column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+}
+/* line 28, sass/_about.scss */
+div.about section.friends ul li {
+  padding: .3em 0 0;
+}
+/* line 30, sass/_about.scss */
+div.about section.friends ul li a {
+  border-bottom: 1px solid #ed1976;
+}
+/* line 32, sass/_about.scss */
+div.about section.friends ul li a:hover {
+  border-bottom: 4px solid #ed1976;
+}
+/* line 40, sass/_about.scss */
+div.about section.contact h2, div.about section.friends h2, div.about section.tweet h2, div.about section.colophon h2 {
+  margin: 2em 0 .5em;
+}
+@media all and (max-width: 800px) {
+  /* line 45, sass/_about.scss */
+  div.about section.img, div.about section.bio {
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 0px;
+  }
+  /* line 52, sass/_about.scss */
+  div.about section.bio {
+    padding: 2em 0 0;
+  }
+  /* line 56, sass/_about.scss */
+  div.about section.friends ul {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 3, sass/_about.scss */
+  div.about section {
+    float: none;
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  /* line 69, sass/_about.scss */
+  div.about section.friends ul {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+}
+
+/* line 1, sass/_resume.scss */
+.resume {
+  max-width: 900px;
+}
+/* line 3, sass/_resume.scss */
+.resume .column {
+  width: 50%;
+  float: left;
+}
+/* line 6, sass/_resume.scss */
+.resume .column ul {
+  margin: 2.3em 0 0;
+}
+/* line 11, sass/_resume.scss */
+.resume .column.left {
+  padding-right: 3em;
+}
+@media all and (max-width: 600px) {
+  /* line 16, sass/_resume.scss */
+  .resume .column {
+    width: 100%;
+    float: none;
+  }
+  /* line 19, sass/_resume.scss */
+  .resume .column.right {
+    margin: 2em 0 0;
+  }
+}
